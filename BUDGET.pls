@@ -3,7 +3,7 @@ IS
     g_managecontrolnumbers   VARCHAR2 (30) := 'MANAGECONTROLNUMBERS';
     g_insufficientrights     VARCHAR2 (44)
         := 'Insufficient Rights To Perform Budget Action';
-
+//06/21/2016 - rupadhar - commenting out this procedure below
     TYPE t_dept_rec IS RECORD
     (
         key_global_dept     hsc.hart_global_depts_mv.key_global_dept%TYPE,
@@ -15,7 +15,7 @@ IS
         college_code        hsc.hart_global_depts_mv.college_code%TYPE
     );
     
-
+// 06/21/2016 rupadhar
     FUNCTION can_manage_new_fund_requests (
         p_personid        IN person_userroles_active.person_id%TYPE,
         p_keyglobaldept   IN person_userroles_active.key_global_dept%TYPE,
